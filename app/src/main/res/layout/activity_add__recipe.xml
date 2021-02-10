@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_Recipe">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/addImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <EditText
+            android:id="@+id/addRecipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="19sp"
+            android:layout_marginTop="20dp"
+            android:hint="Recipe Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/addDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="19sp"
+            android:layout_marginTop="10dp"
+            android:hint="Description"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/addPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="19sp"
+            android:layout_marginTop="10dp"
+            android:hint="Price"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/addIngredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:layout_marginTop="10dp"
+            android:hint="Ingredient"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnAddImage"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Select Image"
+            android:textSize="22sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#fff"
+            android:onClick="btnSelectImage" />
+
+        <Button
+            android:id="@+id/btnAddRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Upload Recipe"
+            android:textSize="22sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#fff"
+            android:onClick="btnAddRecipe"/>
+
+    </LinearLayout>
+
+</ScrollView>
